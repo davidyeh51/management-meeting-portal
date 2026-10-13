@@ -1,15 +1,16 @@
 # 進金生能源 6692｜管理會議記錄知識庫門戶 (2.2.4 管理會議)
 ### AcmePoint Management Meeting Intelligence & Governance Portal
 
-> 🚀 **GitHub Pages 線上互動平台**：[https://davidyeh51.github.io/management-meeting-portal/](https://davidyeh51.github.io/management-meeting-portal/)  
+> 🚀 **GitHub Pages 線上互動簡報網址**：[https://davidyeh51.github.io/management-meeting-portal/](https://davidyeh51.github.io/management-meeting-portal/)  
 > 📑 **麥肯錫顧問風格導讀簡報下載 (14 頁 16:9 .pptx)**：[`acmepoint_meeting_zero_noise.pptx`](./acmepoint_meeting_zero_noise.pptx)  
-> 📂 **原始筆記來源**：`2.0 公司層級 > 2.2 事業經營 > 2.2.4 管理會議 > (月)1330-1430_維運管理月會`
+> 📂 **原始筆記來源**：`2.0 公司層級 > 2.2 事業經營 > 2.2.4 管理會議 > (月)1330-1430_維運管理月會`  
+> 🎨 **設計風格**：完全參照 [ops-management-weekly](https://davidyeh51.github.io/ops-management-weekly/#home) 典雅高階白底科技風、頂部多欄導航與底部簡報翻頁控制雙模態
 
 ---
 
 ## 🌟 平台核心價值與系統特色
 
-本平台為**進金生能源服務股份有限公司（股票代號：6692，進能服）**管理會議記錄專屬之「智慧治理中樞與決策知識庫門戶」。
+本平台為**進金生能源服務股份有限公司（股票代號：6692，進能服）**管理會議記錄專屬之「智慧治理中樞與決策知識庫門戶」，整體版面與交互系統完全對齊 **維運管理週會主席決策系統**（[ops-management-weekly](https://davidyeh51.github.io/ops-management-weekly/#home)）。
 
 1. **模組化可持續擴充架構 (`catalog.json`)**：
    - 預先串接全公司核心會議槽位：首發上線**維運管理月會整合分析**，並預留**總管理週會、南區業務週會、營運業務週會、營運管理週會、董事長晨會及 11 月月會**槽位。
