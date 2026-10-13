@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>進金生能源 6692｜管理會議記錄知識庫門戶 (2.2.4 管理會議)</title>
+  <meta name="description" content="進金生能源服務 6692 管理會議記錄知識庫門戶：首發維運管理月會跨期整合分析、12 頁無雜訊頂尖顧問簡報、19 項行動追蹤與全站即時深度檢索。">
+  <!-- Google Fonts: Inter & Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#051C2C',
+              royal: '#1E3A8A',
+              gold: '#D97706',
+              goldSoft: '#FEF3C7',
+              forest: '#004F32',
+              emerald: '#177B57',
+              lime: '#29BA74',
+              purple: '#A100FF',
+              darkPurple: '#6B21A8',
+              slate: '#1E293B',
+              bgLight: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Embedded Offline Data Bundle -->
+  <script src="data/bundle.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans TC', system-ui, sans-serif;
+      background-color: #F8FAFC;
+      color: #1E293B;
+    }
+    .slide-aspect-ratio {
+      aspect-ratio: 16 / 9;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #CBD5E1;
+      border-radius: 9999px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    .active-nav-tab {
+      background-color: #051C2C !important;
+      color: #FFFFFF !important;
+      font-weight: 600;
+    }
+    .highlight-search {
+      background-color: #FEF08A;
+      color: #854D0E;
+      padding: 0 3px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+
+  <!-- ============================================================================== -->
+  <!-- 1. Top Global Navigation Header -->
+  <!-- ============================================================================== -->
+  <header class="sticky top-0 z-50 bg-[#051C2C] text-white border-b border-slate-700 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo & Branding -->
+        <div class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center font-extrabold text-slate-900 shadow">
+            6692
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-bold text-base tracking-wide text-white">進金生能源服務 AcmePoint</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-medium border border-amber-500/30">2.2.4 管理會議</span>
+            </div>
+            <p class="text-xs text-slate-400">大衛工作知識庫門戶 ｜ 會議分析・無雜訊顧問簡報・全站即時檢索</p>
+          </div>
+        </div>
+
+        <!-- Global Search Input & Quick Shortcut -->
+        <div class="hidden md:flex items-center flex-1 max-w-md mx-6">
+          <div class="relative w-full">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <input 
+              id="globalSearchInput" 
+              type="text" 
+              placeholder="搜尋決策、行動項目、專案商機、簡報內容 (按 Ctrl+K 聚焦)..." 
+              class="w-full pl-9 pr-10 py-1.5 bg-slate-800/90 text-sm text-white placeholder-slate-400 rounded-lg border border-slate-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"
+              oninput="handleSearch(this.value)"
+            >
+            <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center">
+              <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-semibold text-slate-400 bg-slate-700 border border-slate-600 rounded shadow-sm">Ctrl+K</kbd>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Links & Modal Trigger -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <button 
+            onclick="openExtensibilityModal()"
+            class="inline-flex items-center px-2.5 py-1.5 rounded-md text-xs font-medium text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-600 transition"
+            title="查看未來擴充架構與操作說明"
+          >
+            <svg class="w-3.5 h-3.5 mr-1 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+            資料擴充架構
+          </button>
+          
+          <a 
+            href="acmepoint_meeting_zero_noise.pptx" 
+            download 
+            class="inline-flex items-center px-3 py-1.5 rounded-md text-xs font-semibold text-slate-900 bg-amber-500 hover:bg-amber-400 shadow-sm transition"
+            title="下載 16:9 無雜訊顧問簡報實體檔"
+          >
+            <svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            下載 PPTX (16:9)
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Search Bar -->
+  <div class="md:hidden bg-slate-900 px-4 py-2.5 border-b border-slate-700">
+    <div class="relative w-full">
+      <input 
+        id="mobileSearchInput" 
+        type="text" 
+        placeholder="搜尋決策、行動、專案、簡報..." 
+        class="w-full pl-9 pr-3 py-1.5 bg-slate-800 text-sm text-white placeholder-slate-400 rounded-lg border border-slate-600 focus:outline-none"
+        oninput="handleSearch(this.value)"
+      >
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================================== -->
+  <!-- 2. Subheader & Multi-View Navigation Tabs -->
+  <!-- ============================================================================== -->
+  <nav class="bg-white border-b border-slate-200 sticky top-16 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between overflow-x-auto custom-scroll py-2">
+        
+        <div class="flex space-x-1 sm:space-x-2 text-sm font-medium">
+          <button 
+            id="tabBtn-portal" 
+            onclick="switchView('portal')" 
+            class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition active-nav-tab"
+          >
+            🗂️ 知識庫入口與架構 (Catalog)
+          </button>
+          <button 
+            id="tabBtn-slides" 
+            onclick="switchView('slides')" 
+            class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
+          >
+            📊 無雜訊顧問簡報 (12頁 16:9)
+          </button>
+          <button 
+            id="tabBtn-intelligence" 
+            onclick="switchView('intelligence')" 
+            class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
+          >
+            📑 會議深層分析與決策 (Intelligence)
+          </button>
+          <button 
+            id="tabBtn-actions" 
+            onclick="switchView('actions')" 
+            class="px-3.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
+          >
+            📋 累積行動追蹤矩陣 (<span id="actionBadgeCount">19</span>)
+          </button>
+        </div>
+
+        <div class="hidden lg:flex items-center text-xs text-slate-500 space-x-2 pl-4">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>資料同步：2026-10-13 (v2.0 整合版)</span>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================================== -->
+  <!-- 3. Global Live Search Results Dropdown/Banner -->
+  <!-- ============================================================================== -->
+  <div id="searchResultsSection" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="bg-white rounded-xl shadow-lg border border-amber-200 p-5">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+        <div class="flex items-center space-x-2">
+          <span class="text-amber-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </span>
+          <h3 class="text-base font-bold text-slate-900">
+            搜尋結果：<span id="searchQueryLabel" class="text-amber-600 font-semibold"></span>
+            <span id="searchResultCount" class="text-xs text-slate-500 font-normal ml-2"></span>
+          </h3>
+        </div>
+        <button onclick="clearSearch()" class="text-xs font-medium text-slate-400 hover:text-slate-700 px-2 py-1 rounded bg-slate-100">
+          關閉搜尋 ✕
+        </button>
+      </div>
+
+      <!-- Quick Scope Filter Pills -->
+      <div class="flex flex-wrap gap-1.5 mb-4 text-xs">
+        <button onclick="filterSearchResultType('all')" class="search-filter-pill px-2.5 py-1 rounded-full bg-slate-800 text-white font-medium" data-type="all">全部</button>
+        <button onclick="filterSearchResultType('slides')" class="search-filter-pill px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200" data-type="slides">簡報投影片</button>
+        <button onclick="filterSearchResultType('actions')" class="search-filter-pill px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200" data-type="actions">行動追蹤</button>
+        <button onclick="filterSearchResultType('decisions')" class="search-filter-pill px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200" data-type="decisions">決策與洞察</button>
+        <button onclick="filterSearchResultType('opportunities')" class="search-filter-pill px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200" data-type="opportunities">商機方案</button>
+      </div>
+
+      <!-- Results List Container -->
+      <div id="searchResultsList" class="space-y-3 max-h-96 overflow-y-auto custom-scroll pr-2">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================================== -->
+  <!-- 4. Main Content Area (Dynamic Views) -->
+  <!-- ============================================================================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ========================================================================== -->
+    <!-- VIEW A: 🗂️ 知識庫入口與架構 (Catalog & Future Extensibility) -->
+    <!-- ========================================================================== -->
+    <section id="view-portal" class="space-y-8">
+      
+      <!-- Hero Banner -->
+      <div class="bg-gradient-to-r from-[#051C2C] via-[#0F2B48] to-[#1E3A8A] rounded-2xl text-white p-6 sm:p-8 shadow-md border border-slate-700">
+        <div class="max-w-3xl space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30">
+            <span>🚀 企業管理知識中樞</span>
+            <span>•</span>
+            <span>2.2 事業經營 × 4.6 運維管理</span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+            進金生能源服務 6692｜管理會議記錄知識庫門戶
+          </h1>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            整合董事會、經營管理月會、業務與各處週會之決策紀錄與專案進展。具備<strong class="text-amber-400">「可持續擴充架構」</strong>，首發上線<strong class="text-white">維運管理月會跨期深層分析與 12 頁無雜訊頂尖顧問簡報</strong>，支援即時關鍵字穿透檢索、行動追蹤管理與相關戰情平台直連。
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button onclick="switchView('slides')" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm rounded-lg shadow transition">
+              👉 立即開啟 12 頁無雜訊簡報
+            </button>
+            <button onclick="switchView('actions')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm rounded-lg border border-slate-600 transition">
+              📋 檢視 19 項累積追蹤行動 (⚠️ 優先處置)
+            </button>
+            <button onclick="openExtensibilityModal()" class="px-3.5 py-2 bg-transparent hover:bg-white/10 text-slate-300 font-medium text-sm rounded-lg border border-slate-500 transition">
+              ➕ 如何擴充新會議？
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick KPI Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-xs text-slate-500 font-medium">2026 累計營收 (預算達成率)</div>
+          <div class="text-2xl font-extrabold text-emerald-600 mt-1">5,786 萬 <span class="text-xs font-semibold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800">113%</span></div>
+          <div class="text-[11px] text-slate-400 mt-1">全年目標 5,125 萬已提前達標</div>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-xs text-slate-500 font-medium">2027 營收目標 (7:3配比)</div>
+          <div class="text-2xl font-extrabold text-slate-900 mt-1">1.2 億元</div>
+          <div class="text-[11px] text-slate-400 mt-1">維運 8,400 萬 / 修繕 3,600 萬</div>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-xs text-slate-500 font-medium">累積行動追蹤項目</div>
+          <div class="text-2xl font-extrabold text-amber-600 mt-1">19 項 <span class="text-xs font-semibold px-1.5 py-0.5 rounded bg-rose-100 text-rose-800">4 ⚠️ 優先</span></div>
+          <div class="text-[11px] text-slate-400 mt-1">整改方案、妥善率、派工ERP、告警</div>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <div class="text-xs text-slate-500 font-medium">無雜訊頂尖顧問簡報</div>
+          <div class="text-2xl font-extrabold text-[#1E3A8A] mt-1">12 頁 (16:9)</div>
+          <div class="text-[11px] text-slate-400 mt-1">森秀明 8 大版型 × 3 大管顧風格</div>
+        </div>
+      </div>
+
+      <!-- Meeting Modules Catalog Section -->
+      <div class="space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900 flex items-center space-x-2">
+              <span>會議模組目錄與關聯平台 (Catalog Modules)</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-slate-200 text-slate-700 font-normal">共 9 個模組</span>
+            </h2>
+            <p class="text-xs text-slate-500">可從下方入口直連各期會議記錄、無雜訊簡報及關聯運維戰情中樞</p>
+          </div>
+
+          <!-- Catalog Filter Buttons -->
+          <div class="flex space-x-1.5 text-xs bg-slate-200/80 p-1 rounded-lg">
+            <button onclick="filterCatalog('all')" class="cat-filter-btn px-2.5 py-1 rounded-md bg-white text-slate-900 font-semibold shadow-sm" data-cat="all">全部</button>
+            <button onclick="filterCatalog('monthly')" class="cat-filter-btn px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900" data-cat="monthly">月會分析</button>
+            <button onclick="filterCatalog('weekly')" class="cat-filter-btn px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900" data-cat="weekly">週會系列</button>
+            <button onclick="filterCatalog('platform')" class="cat-filter-btn px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900" data-cat="platform">戰情與工程平台</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Module Grid -->
+        <div id="catalogGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Rendered dynamically from window.PORTAL_CATALOG -->
+        </div>
+      </div>
+
+      <!-- Future Extensibility Guide Card -->
+      <div class="bg-amber-50 rounded-xl border border-amber-200 p-5">
+        <div class="flex items-start space-x-3">
+          <div class="text-amber-600 mt-0.5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1 text-sm space-y-2">
+            <h3 class="font-bold text-amber-900 text-base">可持續資料擴充機制 (Extensibility Architecture)</h3>
+            <p class="text-amber-800 text-xs sm:text-sm">
+              本門戶採用模組化結構註冊表設計。未來新增任何會議（例如 11 月維運月會、董事長晨會或各區週會）時，只需透過以下 3 個步驟：
+            </p>
+            <ol class="list-decimal list-inside text-xs sm:text-sm text-amber-800 space-y-1 font-medium">
+              <li>於 <code class="bg-amber-200/60 px-1 py-0.5 rounded text-amber-950">data/</code> 目錄建立該場會議萃取之結構化 JSON 與投影片 JSON。</li>
+              <li>執行本地腳本 <code class="bg-amber-200/60 px-1 py-0.5 rounded text-amber-950">python generate_noisefree_pptx.py</code> 自動產出 16:9 原生投影片檔案。</li>
+              <li>於 <code class="bg-amber-200/60 px-1 py-0.5 rounded text-amber-950">catalog.json</code> 註冊模組條目與關聯標籤，前端自動掛載並支援全站即時深度檢索！</li>
+            </ol>
+            <div class="pt-1">
+              <button onclick="openExtensibilityModal()" class="text-xs font-bold text-amber-900 hover:text-amber-950 underline">
+                點擊查看完整擴充操作指南與 JSON 範例 ➔
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- VIEW B: 📊 無雜訊顧問簡報 (Zero-Noise Interactive Slide Viewer) -->
+    <!-- ========================================================================== -->
+    <section id="view-slides" class="hidden space-y-6">
+      
+      <!-- Slide Viewer Control Bar -->
+      <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="flex items-center space-x-3">
+          <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div>
+            <h2 class="text-base font-bold text-slate-900">
+              無雜訊頂尖顧問簡報互動閱覽器 (Zero-Noise Slide Viewer)
+            </h2>
+            <p class="text-xs text-slate-500">前 BCG 顧問森秀明 8 種版型 × McKinsey・BCG・Accenture 視覺規範 ｜ 支援鍵盤 ← / → 切換</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- Slide Selector Dropdown -->
+          <div class="flex items-center space-x-1">
+            <label for="slideSelect" class="text-xs text-slate-500 font-medium">跳至頁碼：</label>
+            <select 
+              id="slideSelect" 
+              onchange="goToSlide(parseInt(this.value))"
+              class="text-xs font-medium bg-slate-50 border border-slate-300 rounded px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-amber-500"
+            >
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <!-- Notes Toggle -->
+          <button 
+            id="toggleNotesBtn"
+            onclick="toggleSpeakerNotes()" 
+            class="px-2.5 py-1.5 rounded text-xs font-medium bg-slate-100 hover:bg-slate-200 text-slate-700 transition"
+          >
+            📝 顯示講稿備忘錄
+          </button>
+
+          <!-- Fullscreen Button -->
+          <button 
+            onclick="toggleSlideFullscreen()" 
+            class="px-2.5 py-1.5 rounded text-xs font-medium bg-slate-100 hover:bg-slate-200 text-slate-700 transition"
+          >
+            ⛶ 全螢幕
+          </button>
+
+          <!-- Download PPTX Button -->
+          <a 
+            href="acmepoint_meeting_zero_noise.pptx" 
+            download 
+            class="px-3 py-1.5 rounded text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-sm transition flex items-center space-x-1"
+          >
+            <span>下載 .pptx</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide Main Stage -->
+      <div id="slideStageContainer" class="bg-slate-900 rounded-2xl p-2 sm:p-4 shadow-xl border border-slate-800">
+        
+        <!-- 16:9 Canvas Container -->
+        <div id="slideCanvas" class="slide-aspect-ratio w-full bg-white rounded-xl overflow-hidden shadow-2xl relative flex flex-col transition-all duration-300">
+          <!-- Rendered dynamically by renderCurrentSlide() -->
+        </div>
+
+        <!-- Navigation Buttons & Indicators -->
+        <div class="flex items-center justify-between mt-3 px-2 text-white">
+          <button 
+            onclick="prevSlide()" 
+            class="flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition"
+          >
+            <span>‹ 上一頁</span>
+          </button>
+
+          <!-- Dot Thumbnails -->
+          <div id="slideDots" class="hidden sm:flex items-center space-x-1.5">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <span id="slideCounterText" class="text-xs font-mono text-slate-400">1 / 12</span>
+            <button 
+              onclick="nextSlide()" 
+              class="flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition"
+            >
+              <span>下一頁 ›</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Speaker Notes Drawer (Collapsible) -->
+      <div id="speakerNotesCard" class="hidden bg-white rounded-xl p-5 border border-amber-200 shadow-sm space-y-3">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <div class="flex items-center space-x-2">
+            <span class="text-amber-500">📝</span>
+            <h3 class="text-sm font-bold text-slate-900">逐頁顧問講稿備忘錄 (Speaker Notes 3-Part Script)</h3>
+          </div>
+          <span id="notesArchetypeTag" class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-mono"></span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-1">
+            <div class="font-bold text-emerald-800 flex items-center space-x-1">
+              <span>① 本頁結論 (Claim)</span>
+            </div>
+            <p id="noteConclusion" class="text-slate-700 leading-relaxed"></p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-1">
+            <div class="font-bold text-blue-800 flex items-center space-x-1">
+              <span>② 補充說明 (Evidence)</span>
+            </div>
+            <p id="noteExplanation" class="text-slate-700 leading-relaxed"></p>
+          </div>
+          <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-1">
+            <div class="font-bold text-purple-800 flex items-center space-x-1">
+              <span>③ 下一頁轉場 (Transition)</span>
+            </div>
+            <p id="noteTransition" class="text-slate-700 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- VIEW C: 📑 會議深層分析與決策 (Intelligence & Deep Insights) -->
+    <!-- ========================================================================== -->
+    <section id="view-intelligence" class="hidden space-y-8">
+      
+      <!-- Section Header -->
+      <div class="border-b border-slate-200 pb-4">
+        <h2 class="text-xl font-extrabold text-slate-900 flex items-center space-x-2">
+          <span>維運管理月會 跨期深層知識萃取與分析</span>
+          <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-semibold">2026-10-13 ＆ 08-18</span>
+        </h2>
+        <p class="text-xs text-slate-500 mt-1">涵蓋跨會議指標對比、4 大共同模式、6 大亮點洞察、4 大商機 A/B 方案與組織上下層級連動</p>
+      </div>
+
+      <!-- 1. Cross-Meeting Indicators Comparison Table -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="bg-slate-900 px-5 py-3 text-white flex items-center justify-between">
+          <div class="flex items-center space-x-2 font-bold text-sm">
+            <span>📈 跨會議核心經營指標演變 (Cross-Meeting Indicators)</span>
+          </div>
+          <span class="text-xs text-slate-400">8/18 vs 10/13 比較</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-50 text-slate-600 font-semibold border-b border-slate-200">
+              <tr>
+                <th class="py-3 px-4">經營指標項目</th>
+                <th class="py-3 px-4">2026-08-18 數值</th>
+                <th class="py-3 px-4">2026-10-13 數值</th>
+                <th class="py-3 px-4">狀態判讀</th>
+                <th class="py-3 px-4">關鍵洞察解析</th>
+              </tr>
+            </thead>
+            <tbody id="kpiTableBody" class="divide-y divide-slate-100">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 2. Four Recurring Patterns -->
+      <div class="space-y-3">
+        <h3 class="text-base font-bold text-slate-900 flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <span>跨會議四大共同模式解析 (Recurring Patterns)</span>
+        </h3>
+        <div id="patternsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- 3. Decisions & Discussions Comparison (10/13 vs 08/18) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- 10/13 Meeting Card -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">最新月會</span>
+              <h3 class="text-base font-extrabold text-slate-900 mt-1">2026-10-13 維運月會 ft 厲總</h3>
+            </div>
+            <span class="text-xs text-slate-400">主持：厲總</span>
+          </div>
+          
+          <div>
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">已拍板決策 (Decisions)</h4>
+            <ul id="decisions1013List" class="space-y-1.5 text-xs text-slate-700">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+
+          <div class="pt-2 border-t border-slate-100">
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">討論中事項 (Under Discussion)</h4>
+            <ul id="discussions1013List" class="space-y-1.5 text-xs text-slate-700">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- 08/18 Meeting Card -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div>
+              <span class="text-xs font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">前期基準</span>
+              <h3 class="text-base font-extrabold text-slate-900 mt-1">2026-08-18 維運管理月會</h3>
+            </div>
+            <span class="text-xs text-slate-400">主持：厲總</span>
+          </div>
+          
+          <div>
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">已拍板決策 (Decisions)</h4>
+            <ul id="decisions0818List" class="space-y-1.5 text-xs text-slate-700">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+
+          <div class="pt-2 border-t border-slate-100">
+            <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">討論中事項 (Under Discussion)</h4>
+            <ul id="discussions0818List" class="space-y-1.5 text-xs text-slate-700">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4. Six Deep Insights (McKinsey/BCG Consultant Perspective) -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-base font-bold text-slate-900 flex items-center space-x-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            <span>六大頂尖管顧深度洞察 (Consultant Deep Insights)</span>
+          </h3>
+          <span class="text-xs text-slate-400">點擊卡片可展開完整論證與背景</span>
+        </div>
+        <div id="insightsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- 5. Four Commercial Opportunities & A/B Decision Options -->
+      <div class="space-y-3">
+        <h3 class="text-base font-bold text-slate-900 flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+          <span>四大專案商機與 A/B 方案決策矩陣 (Business Opportunities)</span>
+        </h3>
+        <div id="opportunitiesGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- 6. Upstream / Downstream Organizational Alignment -->
+      <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-4">
+        <h3 class="text-base font-bold text-slate-900 flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+          <span>組織架構上下層級連動關係 (Organizational Alignment)</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs sm:text-sm">
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 space-y-2">
+            <div class="font-bold text-slate-900 flex items-center space-x-1.5">
+              <span class="text-blue-600">▲</span>
+              <span>往上連動（董事會與事業經營層級）</span>
+            </div>
+            <ul id="upstreamList" class="space-y-1.5 text-slate-700 leading-relaxed">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 space-y-2">
+            <div class="font-bold text-slate-900 flex items-center space-x-1.5">
+              <span class="text-emerald-600">▼</span>
+              <span>往下連動（跨部門營運與執行落地）</span>
+            </div>
+            <ul id="downstreamList" class="space-y-1.5 text-slate-700 leading-relaxed">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- VIEW D: 📋 累積行動追蹤矩陣 (Action Tracking Matrix) -->
+    <!-- ========================================================================== -->
+    <section id="view-actions" class="hidden space-y-6">
+      
+      <!-- Action Matrix Header & Filters -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900 flex items-center space-x-2">
+              <span>累積行動追蹤表（現況更新至 2026-10-13）</span>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">共 19 項</span>
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">⚠️ 標記項目代表需列入高優先限期處置</p>
+          </div>
+
+          <!-- Status Filter Tabs -->
+          <div class="flex flex-wrap gap-1 text-xs">
+            <button onclick="filterActions('all')" class="action-status-btn px-2.5 py-1 rounded-md bg-slate-800 text-white font-medium" data-status="all">全部 (19)</button>
+            <button onclick="filterActions('priority')" class="action-status-btn px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 hover:bg-rose-100 font-semibold" data-status="priority">⚠️ 優先 (4)</button>
+            <button onclick="filterActions('ongoing')" class="action-status-btn px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 hover:bg-blue-100 font-medium" data-status="ongoing">進行中 (5)</button>
+            <button onclick="filterActions('new')" class="action-status-btn px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 hover:bg-emerald-100 font-medium" data-status="new">新增 (8)</button>
+            <button onclick="filterActions('pending')" class="action-status-btn px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 hover:bg-amber-100 font-medium" data-status="pending">狀態不明/逾期 (4)</button>
+          </div>
+        </div>
+
+        <!-- Quick Owner Filter Dropdown -->
+        <div class="flex items-center space-x-3 pt-2 border-t border-slate-100 text-xs">
+          <span class="text-slate-500 font-medium">篩選負責人：</span>
+          <div id="ownerFilterPills" class="flex flex-wrap gap-1.5">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Items Table -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-900 text-white font-semibold">
+              <tr>
+                <th class="py-3 px-3.5 w-12 text-center">序號</th>
+                <th class="py-3 px-4">任務項目</th>
+                <th class="py-3 px-3">負責人</th>
+                <th class="py-3 px-3.5">期限</th>
+                <th class="py-3 px-3 text-center">狀態</th>
+                <th class="py-3 px-3 text-center">來源</th>
+                <th class="py-3 px-4">備註與現況指引</th>
+              </tr>
+            </thead>
+            <tbody id="actionsTableBody" class="divide-y divide-slate-100">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ============================================================================== -->
+  <!-- 5. Future Extensibility Modal (Pop-up Dialog) -->
+  <!-- ============================================================================== -->
+  <div id="extensibilityModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+      
+      <div class="bg-[#051C2C] text-white px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <span class="text-amber-400 font-bold">🛠️</span>
+          <h3 class="text-base font-bold">會議記錄知識庫・未來擴充架構操作指南</h3>
+        </div>
+        <button onclick="closeExtensibilityModal()" class="text-slate-400 hover:text-white text-lg">✕</button>
+      </div>
+
+      <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-700 max-h-[75vh] overflow-y-auto custom-scroll">
+        <p class="leading-relaxed">
+          本知識庫門戶專為<strong>「高頻持續擴充」</strong>設計，支援進金生能源服務 6692 的所有董事會、月會與週會無縫納入統一檢索體系：
+        </p>
+
+        <div class="space-y-3">
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
+            <div class="font-bold text-slate-900 flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
+              <span>建立結構化資料（Data Preparation）</span>
+            </div>
+            <p class="text-slate-600 pl-7 text-xs">
+              在 <code class="bg-slate-200 px-1 py-0.5 rounded">data/</code> 資料夾下新增該會議的 JSON 檔案（例如 <code class="bg-slate-200 px-1 py-0.5 rounded">meeting_202611.json</code> 與 <code class="bg-slate-200 px-1 py-0.5 rounded">slides_202611.json</code>），結構完全對齊 8 大無雜訊簡報版型。
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
+            <div class="font-bold text-slate-900 flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs">2</span>
+              <span>執行 /zero-noise-pptx 本地腳本產出簡報</span>
+            </div>
+            <p class="text-slate-600 pl-7 text-xs">
+              執行 Python 指令：<br>
+              <code class="block bg-slate-900 text-amber-300 p-2 rounded mt-1 font-mono text-[11px]">
+                python generate_noisefree_pptx.py --style hybrid --json data/slides_202611.json --output meeting_202611_zero_noise.pptx
+              </code>
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1">
+            <div class="font-bold text-slate-900 flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-full bg-amber-600 text-white flex items-center justify-center text-xs">3</span>
+              <span>在 catalog.json 註冊模組條目</span>
+            </div>
+            <p class="text-slate-600 pl-7 text-xs">
+              在 <code class="bg-slate-200 px-1 py-0.5 rounded">catalog.json</code> 的 <code class="bg-slate-200 px-1 py-0.5 rounded">modules</code> 陣列加入新模組資料，前端入口將自動渲染卡片、產生投影片閱覽器並同步至即時搜尋索引！
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-100 flex justify-end">
+          <button onclick="closeExtensibilityModal()" class="px-4 py-2 bg-[#051C2C] text-white rounded-lg text-xs font-semibold hover:bg-slate-800 transition">
+            我了解了，關閉視窗
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================================== -->
+  <!-- 6. Footer -->
+  <!-- ============================================================================== -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-white">進金生能源服務 6692 AcmePoint</span>
+        <span>•</span>
+        <span>管理會議記錄知識庫門戶 (2.2.4 管理會議)</span>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px]">
+        <span>方法論：前 BCG 顧問森秀明《無雜訊簡報製作法》</span>
+        <span>•</span>
+        <span>風格：McKinsey / BCG / Accenture</span>
+        <span>•</span>
+        <a href="https://github.com/davidyeh51/management-meeting-portal" target="_blank" class="text-amber-400 hover:underline">
+          GitHub Repository
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================================== -->
+  <!-- 7. Core Application JavaScript -->
+  <!-- ============================================================================== -->
+  <script>
+    // Global State
+    let currentSlideIndex = 0;
+    let currentView = 'portal';
+    let currentActionFilter = 'all';
+    let currentOwnerFilter = 'all';
+    let currentCatalogFilter = 'all';
+    let showSpeakerNotes = false;
+
+    // Data references from bundle.js
+    const catalogData = window.PORTAL_CATALOG || {};
+    const meetingData = window.PORTAL_MEETING_DATA || {};
+    const slidesData = window.PORTAL_SLIDES || [];
+
+    // Initialize application on DOM loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      initApp();
+      setupKeyboardShortcuts();
+    });
+
+    function initApp() {
+      renderCatalog();
+      renderSlideOptions();
+      renderCurrentSlide();
+      renderIntelligenceView();
+      renderActionsTable();
+      renderOwnerFilterPills();
+    }
+
+    // ============================================================================
+    // Navigation & View Switching
+    // ============================================================================
+    function switchView(viewName) {
+      currentView = viewName;
+      const views = ['portal', 'slides', 'intelligence', 'actions'];
+      views.forEach(v => {
+        const el = document.getElementById(`view-${v}`);
+        const btn = document.getElementById(`tabBtn-${v}`);
+        if (el) {
+          if (v === viewName) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        }
+        if (btn) {
+          if (v === viewName) {
+            btn.classList.add('active-nav-tab');
+          } else {
+            btn.classList.remove('active-nav-tab');
+          }
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setupKeyboardShortcuts() {
+      window.addEventListener('keydown', (e) => {
+        // Ctrl+K for search
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          const inp = document.getElementById('globalSearchInput');
+          if (inp) {
+            inp.focus();
+            inp.select();
+          }
+        }
+        // Left/Right arrow for slides when on slides tab
+        if (currentView === 'slides') {
+          if (e.key === 'ArrowLeft') {
+            prevSlide();
+          } else if (e.key === 'ArrowRight') {
+            nextSlide();
+          }
+        }
+      });
+    }
+
+    // ============================================================================
+    // Catalog Grid Rendering
+    // ============================================================================
+    function renderCatalog() {
+      const grid = document.getElementById('catalogGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const modules = catalogData.modules || [];
+      const filtered = modules.filter(m => {
+        if (currentCatalogFilter === 'all') return true;
+        if (currentCatalogFilter === 'monthly') return m.category.includes('月會');
+        if (currentCatalogFilter === 'weekly') return m.category.includes('週會');
+        if (currentCatalogFilter === 'platform') return m.category.includes('平台') || m.category.includes('系統');
+        return true;
+      });
+
+      filtered.forEach(m => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4";
+
+        let badgeClass = "bg-slate-100 text-slate-700";
+        if (m.badge_color === 'emerald') badgeClass = "bg-emerald-100 text-emerald-800 border border-emerald-200";
+        if (m.badge_color === 'blue') badgeClass = "bg-blue-100 text-blue-800 border border-blue-200";
+        if (m.badge_color === 'purple') badgeClass = "bg-purple-100 text-purple-800 border border-purple-200";
+        if (m.badge_color === 'amber') badgeClass = "bg-amber-100 text-amber-800 border border-amber-200";
+
+        let actionBtnHtml = '';
+        if (m.status === 'online') {
+          actionBtnHtml = `
+            <div class="flex items-center space-x-2 pt-2 border-t border-slate-100">
+              <button onclick="switchView('slides')" class="flex-1 py-1.5 px-3 rounded-lg bg-[#051C2C] hover:bg-slate-800 text-white text-xs font-semibold text-center transition">
+                📊 開啟簡報 (12頁)
+              </button>
+              <button onclick="switchView('intelligence')" class="py-1.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-medium transition">
+                深層分析 ➔
+              </button>
+            </div>
+          `;
+        } else if (m.status === 'linked' && m.external_url) {
+          actionBtnHtml = `
+            <div class="pt-2 border-t border-slate-100">
+              <a href="${m.external_url}" target="_blank" class="block w-full py-1.5 px-3 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-xs font-semibold text-center transition">
+                🌐 直連獨立戰情平台 ↗
+              </a>
+            </div>
+          `;
+        } else {
+          actionBtnHtml = `
+            <div class="pt-2 border-t border-slate-100">
+              <button onclick="openExtensibilityModal()" class="w-full py-1.5 px-3 rounded-lg bg-slate-50 text-slate-400 border border-slate-200 text-xs font-medium text-center">
+                🔒 模組已預留（待導入數據）
+              </button>
+            </div>
+          `;
+        }
+
+        const tagsHtml = (m.tags || []).slice(0, 4).map(t => 
+          `<span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[11px] font-medium">${t}</span>`
+        ).join('');
+
+        card.innerHTML = `
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs px-2 py-0.5 rounded-full font-bold ${badgeClass}">${m.badge}</span>
+              <span class="text-[11px] font-mono text-slate-400">${m.meeting_date}</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 leading-snug">${m.title}</h3>
+              <p class="text-xs text-slate-500 mt-0.5">${m.subtitle}</p>
+            </div>
+            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">${m.description}</p>
+            <div class="flex flex-wrap gap-1 pt-1">${tagsHtml}</div>
+          </div>
+          ${actionBtnHtml}
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterCatalog(category) {
+      currentCatalogFilter = category;
+      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          btn.className = "cat-filter-btn px-2.5 py-1 rounded-md bg-white text-slate-900 font-semibold shadow-sm";
+        } else {
+          btn.className = "cat-filter-btn px-2.5 py-1 rounded-md text-slate-600 hover:text-slate-900";
+        }
+      });
+      renderCatalog();
+    }
+
+    // ============================================================================
+    // Slide Viewer & Archetype Renderers
+    // ============================================================================
+    function renderSlideOptions() {
+      const select = document.getElementById('slideSelect');
+      const dots = document.getElementById('slideDots');
+      if (!select) return;
+      select.innerHTML = '';
+      if (dots) dots.innerHTML = '';
+
+      slidesData.forEach((s, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = `P.${idx + 1} - ${s.type === 'cover' ? s.title : s.conclusion_title.slice(0, 24) + '...'}`;
+        select.appendChild(opt);
+
+        if (dots) {
+          const dot = document.createElement('button');
+          dot.className = `w-2 h-2 rounded-full transition ${idx === currentSlideIndex ? 'bg-amber-400 w-4' : 'bg-slate-600 hover:bg-slate-400'}`;
+          dot.onclick = () => goToSlide(idx);
+          dot.title = `跳至第 ${idx + 1} 頁`;
+          dots.appendChild(dot);
+        }
+      });
+    }
+
+    function goToSlide(index) {
+      if (index >= 0 && index < slidesData.length) {
+        currentSlideIndex = index;
+        renderCurrentSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        renderCurrentSlide();
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < slidesData.length - 1) {
+        currentSlideIndex++;
+        renderCurrentSlide();
+      }
+    }
+
+    function toggleSpeakerNotes() {
+      showSpeakerNotes = !showSpeakerNotes;
+      const card = document.getElementById('speakerNotesCard');
+      const btn = document.getElementById('toggleNotesBtn');
+      if (card) {
+        if (showSpeakerNotes) {
+          card.classList.remove('hidden');
+          btn.classList.add('bg-amber-100', 'text-amber-900');
+        } else {
+          card.classList.add('hidden');
+          btn.classList.remove('bg-amber-100', 'text-amber-900');
+        }
+      }
+    }
+
+    function toggleSlideFullscreen() {
+      const stage = document.getElementById('slideStageContainer');
+      if (!stage) return;
+      if (!document.fullscreenElement) {
+        stage.requestFullscreen().catch(err => alert(`無法進入全螢幕：${err.message}`));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    function renderCurrentSlide() {
+      const s = slidesData[currentSlideIndex];
+      const canvas = document.getElementById('slideCanvas');
+      const select = document.getElementById('slideSelect');
+      const counter = document.getElementById('slideCounterText');
+      if (!canvas || !s) return;
+
+      if (select) select.value = currentSlideIndex;
+      if (counter) counter.textContent = `${currentSlideIndex + 1} / ${slidesData.length}`;
+
+      // Update dots
+      const dots = document.getElementById('slideDots');
+      if (dots) {
+        Array.from(dots.children).forEach((d, idx) => {
+          d.className = `h-2 rounded-full transition ${idx === currentSlideIndex ? 'bg-amber-400 w-4' : 'bg-slate-600 hover:bg-slate-400 w-2'}`;
+        });
+      }
+
+      // Update speaker notes card
+      updateNotesView(s);
+
+      // Render based on archetype type
+      if (s.type === 'cover') {
+        canvas.innerHTML = renderSlideCover(s);
+      } else {
+        const headerHtml = `
+          <div class="px-8 pt-6 pb-3 border-b border-slate-200 flex-shrink-0">
+            <div class="flex items-center justify-between text-xs font-bold text-slate-500 mb-1">
+              <span class="text-amber-600 font-semibold tracking-wide">${s.category || '經營分析'} ｜ ${s.layout_label || '無雜訊版型'} ｜ ${(s.style || 'McKinsey').toUpperCase()} STYLE</span>
+              <span class="font-mono text-slate-400">${currentSlideIndex + 1} / ${slidesData.length}</span>
+            </div>
+            <h1 class="text-xl sm:text-2xl font-extrabold text-[#051C2C] leading-tight">
+              ${s.conclusion_title}
+            </h1>
+            ${s.subtitle ? `<p class="text-xs sm:text-sm text-slate-500 mt-1">${s.subtitle}</p>` : ''}
+          </div>
+        `;
+
+        let bodyHtml = '';
+        if (s.type === 'one_to_one') bodyHtml = renderSlideOneToOne(s);
+        else if (s.type === 'parallel') bodyHtml = renderSlideParallel(s);
+        else if (s.type === 'combined') bodyHtml = renderSlideCombined(s);
+        else if (s.type === 'chain') bodyHtml = renderSlideChain(s);
+        else if (s.type === 'mckinsey_flow') bodyHtml = renderSlideMcKinseyFlow(s);
+        else if (s.type === 'opposition') bodyHtml = renderSlideOpposition(s);
+        else if (s.type === 'comparison') bodyHtml = renderSlideComparison(s);
+        else if (s.type === 'bcg_matrix') bodyHtml = renderSlideBcgMatrix(s);
+        else bodyHtml = renderSlideParallel(s);
+
+        const footerHtml = s.footer ? `
+          <div class="px-8 py-2 bg-slate-50 border-t border-slate-200 text-[10px] text-slate-400 flex items-center justify-between flex-shrink-0">
+            <span>${s.footer}</span>
+            <span>進金生能源服務 6692 • 管理會議記錄知識庫</span>
+          </div>
+        ` : '';
+
+        canvas.innerHTML = `
+          <div class="h-full flex flex-col justify-between bg-white text-slate-900 select-none">
+            ${headerHtml}
+            <div class="flex-1 px-8 py-4 overflow-hidden flex flex-col justify-center">
+              ${bodyHtml}
+            </div>
+            ${footerHtml}
+          </div>
+        `;
+      }
+    }
+
+    function updateNotesView(s) {
+      const notes = s.speaker_notes || {};
+      const tag = document.getElementById('notesArchetypeTag');
+      const c = document.getElementById('noteConclusion');
+      const e = document.getElementById('noteExplanation');
+      const t = document.getElementById('noteTransition');
+      if (tag) tag.textContent = `${s.layout_label || s.type} (${s.style || 'hybrid'})`;
+      if (c) c.textContent = notes.conclusion || s.conclusion_title || '—';
+      if (e) e.textContent = notes.explanation || '—';
+      if (t) t.textContent = notes.transition || '—';
+    }
+
+    // Archetype HTML Generators
+    function renderSlideCover(s) {
+      return `
+        <div class="h-full w-full bg-gradient-to-br from-[#051C2C] via-[#0A2640] to-[#1E3A8A] text-white p-8 sm:p-14 flex flex-col justify-between select-none">
+          <div class="space-y-3">
+            <div class="w-16 h-1.5 bg-amber-500 rounded"></div>
+            <div class="text-xs sm:text-sm font-bold tracking-widest text-amber-400 uppercase">
+              ${s.category || 'MANAGEMENT BRIEFING'}
+            </div>
+          </div>
+          <div class="space-y-4 max-w-4xl">
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight text-white">
+              ${s.title}
+            </h1>
+            <p class="text-base sm:text-xl text-slate-200 font-medium leading-relaxed">
+              核心主張：${s.core_claim}
+            </p>
+          </div>
+          <div class="text-xs text-slate-400 flex items-center justify-between border-t border-slate-700/60 pt-4">
+            <span>${s.meta || '前 BCG 顧問森秀明《無雜訊簡報製作法》 × 三大管顧視覺規範'}</span>
+            <span class="font-mono">進金生能源服務 6692 • 2.2.4 管理會議</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideOneToOne(s) {
+      const bars = s.bars || [];
+      const maxVal = Math.max(...bars.map(b => b.value || 0)) || 1;
+      const barsHtml = bars.map(b => {
+        const heightPct = Math.max(12, Math.round((b.value / maxVal) * 100));
+        const isHl = b.highlight;
+        const barColor = isHl ? 'bg-amber-500 shadow-md ring-2 ring-amber-300' : 'bg-slate-300';
+        const textColor = isHl ? 'text-amber-700 font-bold' : 'text-slate-600';
+        return `
+          <div class="flex-1 flex flex-col items-center h-full justify-end group">
+            <span class="text-xs font-mono font-bold ${textColor} mb-1.5">${b.display}</span>
+            <div class="w-full max-w-[56px] ${barColor} rounded-t transition-all duration-300" style="height: ${heightPct}%;"></div>
+            <span class="text-[11px] font-medium text-slate-700 mt-2 text-center line-clamp-1">${b.label}</span>
+          </div>
+        `;
+      }).join('');
+
+      const pointsHtml = (s.callout_points || []).map(p => 
+        `<li class="leading-relaxed"><span class="text-slate-700">${p}</span></li>`
+      ).join('');
+
+      return `
+        <div class="grid grid-cols-12 gap-6 h-full items-center">
+          <div class="col-span-8 h-64 bg-slate-50 rounded-xl p-4 border border-slate-200 flex items-end justify-between space-x-3">
+            ${barsHtml}
+          </div>
+          <div class="col-span-4 bg-amber-50/70 border border-amber-200 rounded-xl p-4 flex flex-col justify-center space-y-2">
+            <h4 class="text-xs font-bold text-amber-900 flex items-center space-x-1.5">
+              <span>🎯 ${s.callout_title || '核心證據解析'}</span>
+            </h4>
+            <ul class="text-xs space-y-1.5 text-slate-700 list-disc list-inside">
+              ${pointsHtml}
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideParallel(s) {
+      const cards = s.cards || [];
+      const cols = cards.length === 4 ? 'grid-cols-4' : (cards.length === 2 ? 'grid-cols-2' : 'grid-cols-3');
+      const cardsHtml = cards.map((c, idx) => {
+        const pointsHtml = (c.points || []).map((pt, pIdx) => `
+          <li class="leading-relaxed"><strong class="text-slate-800">${pIdx + 1}.</strong> ${pt}</li>
+        `).join('');
+        return `
+          <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden flex flex-col shadow-sm">
+            <div class="bg-[#051C2C] text-white px-3.5 py-2 text-xs font-bold text-center tracking-wide">
+              ${c.title}
+            </div>
+            <div class="p-3.5 flex-1 flex flex-col justify-center">
+              <ul class="text-xs space-y-2 text-slate-700">
+                ${pointsHtml}
+              </ul>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `<div class="grid ${cols} gap-4 h-full items-stretch">${cardsHtml}</div>`;
+    }
+
+    function renderSlideCombined(s) {
+      const pillars = s.pillars || [];
+      const pillarsHtml = pillars.map((pil, idx) => {
+        const factsHtml = (pil.facts || []).map(f => `
+          <div class="bg-white p-2.5 rounded-lg border border-slate-200 text-xs text-slate-700 shadow-sm leading-relaxed">
+            • ${f}
+          </div>
+        `).join('');
+        return `
+          <div class="flex-1 bg-slate-50 rounded-xl p-3.5 border border-slate-200 space-y-2.5">
+            <div class="bg-[#1E3A8A] text-white text-xs font-bold py-1.5 px-3 rounded-md text-center">
+              ${pil.title}
+            </div>
+            <div class="space-y-2">${factsHtml}</div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="flex flex-col h-full justify-between space-y-3">
+          <div class="bg-[#051C2C] text-white rounded-xl py-2.5 px-4 text-center font-bold text-sm shadow">
+            ${s.top_claim || s.conclusion_title}
+          </div>
+          <div class="flex items-center justify-center text-slate-400 font-bold text-sm">
+            ▲ 兩大必要前提同時成立 ▲
+          </div>
+          <div class="flex space-x-4 flex-1 items-stretch">
+            ${pillarsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideChain(s) {
+      const steps = s.steps || [];
+      const stepsHtml = steps.map((st, idx) => {
+        const itemsHtml = (st.items || []).map(it => `
+          <li class="text-slate-700 leading-relaxed">• ${it}</li>
+        `).join('');
+        const isLast = idx === steps.length - 1;
+        const badgeColor = isLast ? 'bg-amber-600' : 'bg-[#1E3A8A]';
+        return `
+          <div class="flex-1 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden flex flex-col shadow-sm">
+            <div class="${badgeColor} text-white px-3 py-2 text-xs font-bold text-center">
+              ${st.stage}
+            </div>
+            <div class="p-3 flex-1 flex flex-col justify-center">
+              <ul class="text-xs space-y-2">${itemsHtml}</ul>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="flex flex-col h-full justify-between space-y-3">
+          <div class="bg-amber-500 text-slate-950 font-bold text-xs py-1.5 px-4 rounded-lg flex items-center justify-between shadow-sm">
+            <span>${s.flow_label || '② 時間經過與因果推導長箭頭 ───►'}</span>
+            <span class="text-[11px] font-mono">端到端流程閉環</span>
+          </div>
+          <div class="flex space-x-3 flex-1 items-stretch">
+            ${stepsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideMcKinseyFlow(s) {
+      const stages = s.stages || [];
+      const rows = s.rows || [];
+
+      const stagesHeaderHtml = stages.map(st => `
+        <div class="flex-1 bg-[#1E3A8A] text-white font-bold text-xs py-1.5 px-2 text-center rounded-md">
+          ${st}
+        </div>
+      `).join('');
+
+      const rowsHtml = rows.map((r, rIdx) => {
+        const isSolution = rIdx === rows.length - 1;
+        const labelBg = isSolution ? 'bg-amber-500 text-slate-950' : 'bg-[#051C2C] text-white';
+        const cellBg = isSolution ? 'bg-amber-50/80 border-amber-200' : 'bg-slate-50 border-slate-200';
+        const cellsHtml = (r.cells || []).map(c => `
+          <div class="flex-1 ${cellBg} p-2.5 rounded-lg border text-xs text-slate-700 leading-relaxed flex items-center">
+            ${c}
+          </div>
+        `).join('');
+
+        return `
+          <div class="flex space-x-2 items-stretch">
+            <div class="${labelBg} font-bold text-xs w-28 px-2 py-3 rounded-lg flex items-center justify-center text-center flex-shrink-0">
+              ${r.dimension}
+            </div>
+            <div class="flex-1 flex space-x-2">${cellsHtml}</div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="flex flex-col h-full justify-between space-y-2.5">
+          <div class="flex space-x-2 pl-30 ml-28">
+            ${stagesHeaderHtml}
+          </div>
+          <div class="space-y-2.5 flex-1 flex flex-col justify-center">
+            ${rowsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideOpposition(s) {
+      const dims = s.dimensions || [];
+      const rowsHtml = dims.map(d => `
+        <div class="flex space-x-3 items-stretch">
+          <div class="w-28 bg-amber-100 text-amber-900 font-bold text-xs rounded-lg p-2 text-center flex items-center justify-center flex-shrink-0 border border-amber-200">
+            ${d.name}
+          </div>
+          <div class="flex-1 bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-700 leading-relaxed flex items-center">
+            ${d.side_a}
+          </div>
+          <div class="flex-1 bg-emerald-50/60 border border-emerald-200 rounded-lg p-2.5 text-xs text-slate-800 leading-relaxed flex items-center">
+            ${d.side_b}
+          </div>
+        </div>
+      `).join('');
+
+      return `
+        <div class="flex flex-col h-full justify-between space-y-2">
+          <div class="flex space-x-3">
+            <div class="w-28 text-center text-xs font-bold text-slate-400 py-1">評估維度</div>
+            <div class="flex-1 bg-[#051C2C] text-white font-bold text-xs py-1.5 px-3 rounded-lg text-center">
+              ${s.side_a_title || '見解 A'}
+            </div>
+            <div class="flex-1 bg-[#004F32] text-white font-bold text-xs py-1.5 px-3 rounded-lg text-center">
+              ${s.side_b_title || '見解 B'}
+            </div>
+          </div>
+          <div class="space-y-2 flex-1 flex flex-col justify-center">
+            ${rowsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideComparison(s) {
+      const leftPts = (s.left_points || []).map(p => `<li>• ${p}</li>`).join('');
+      const commonPts = (s.common_points || []).map(p => `<li>• ${p}</li>`).join('');
+      const rightPts = (s.right_points || []).map(p => `<li>• ${p}</li>`).join('');
+
+      return `
+        <div class="grid grid-cols-3 gap-4 h-full items-stretch">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+            <div class="text-[#051C2C] font-bold text-xs pb-2 border-b border-slate-200">${s.left_title}</div>
+            <ul class="text-xs text-slate-700 space-y-2 mt-3 flex-1 flex flex-col justify-center">${leftPts}</ul>
+          </div>
+          <div class="bg-amber-50 border-2 border-amber-400 rounded-xl p-4 flex flex-col shadow-sm">
+            <div class="text-amber-900 font-bold text-xs pb-2 border-b border-amber-200 flex items-center justify-between">
+              <span>${s.common_title}</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-200 text-amber-900 font-bold">核心交集</span>
+            </div>
+            <ul class="text-xs text-slate-800 space-y-2.5 mt-3 flex-1 flex flex-col justify-center">${commonPts}</ul>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+            <div class="text-[#004F32] font-bold text-xs pb-2 border-b border-slate-200">${s.right_title}</div>
+            <ul class="text-xs text-slate-700 space-y-2 mt-3 flex-1 flex flex-col justify-center">${rightPts}</ul>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSlideBcgMatrix(s) {
+      const quads = s.quadrants || [];
+      const qHtml = quads.map(q => {
+        const isHl = q.highlight;
+        const boxClass = isHl ? 'bg-amber-50 border-2 border-amber-500 shadow-md ring-2 ring-amber-200' : 'bg-slate-50 border border-slate-200';
+        const titleClass = isHl ? 'text-amber-900 font-extrabold' : 'text-slate-900 font-bold';
+        return `
+          <div class="${boxClass} rounded-xl p-3.5 flex flex-col justify-between">
+            <div class="${titleClass} text-xs flex items-center justify-between">
+              <span>${q.title}</span>
+              ${isHl ? '<span class="text-[10px] bg-amber-500 text-slate-950 px-1.5 py-0.2 rounded font-bold">焦點象限</span>' : ''}
+            </div>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${q.desc}</p>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="flex h-full space-x-3 items-stretch">
+          <div class="w-12 bg-[#051C2C] text-white rounded-xl flex items-center justify-center p-2 text-center text-xs font-bold leading-tight writing-mode-vertical">
+            附加價值與難度 ▲
+          </div>
+          <div class="flex-1 flex flex-col justify-between space-y-2">
+            <div class="grid grid-cols-2 gap-3 flex-1">
+              ${qHtml}
+            </div>
+            <div class="bg-[#051C2C] text-white py-1.5 px-3 rounded-lg text-center text-xs font-bold flex justify-between">
+              <span>◄ 外部新市場 (X1)</span>
+              <span>顧客與市場範疇軸</span>
+              <span>既有客戶群 (X2) ►</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // ============================================================================
+    // Intelligence & Decisions Rendering
+    // ============================================================================
+    function renderIntelligenceView() {
+      // 1. KPI Table
+      const kpiBody = document.getElementById('kpiTableBody');
+      if (kpiBody) {
+        kpiBody.innerHTML = '';
+        (meetingData.kpi_comparison || []).forEach(k => {
+          const row = document.createElement('tr');
+          row.className = "hover:bg-slate-50/80 transition";
+          let badgeClass = "bg-slate-100 text-slate-700";
+          if (k.status_color === 'emerald') badgeClass = "bg-emerald-100 text-emerald-800 font-bold";
+          if (k.status_color === 'amber') badgeClass = "bg-amber-100 text-amber-800 font-bold";
+          if (k.status_color === 'rose') badgeClass = "bg-rose-100 text-rose-800 font-bold";
+          if (k.status_color === 'blue') badgeClass = "bg-blue-100 text-blue-800 font-bold";
+          if (k.status_color === 'purple') badgeClass = "bg-purple-100 text-purple-800 font-bold";
+
+          row.innerHTML = `
+            <td class="py-3 px-4 font-bold text-slate-900">${k.metric}</td>
+            <td class="py-3 px-4 text-slate-500 font-mono">${k.val_0818}</td>
+            <td class="py-3 px-4 font-mono font-bold text-slate-900">${k.val_1013}</td>
+            <td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs ${badgeClass}">${k.status}</span></td>
+            <td class="py-3 px-4 text-slate-600 text-xs">${k.insight}</td>
+          `;
+          kpiBody.appendChild(row);
+        });
+      }
+
+      // 2. Patterns Grid
+      const patGrid = document.getElementById('patternsGrid');
+      if (patGrid) {
+        patGrid.innerHTML = '';
+        (meetingData.recurring_patterns || []).forEach((p, idx) => {
+          const card = document.createElement('div');
+          card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2";
+          card.innerHTML = `
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">${p.tag}</span>
+              <span class="text-xs font-mono text-slate-400">#0${idx + 1}</span>
+            </div>
+            <h4 class="text-sm font-bold text-slate-900">${p.title}</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">${p.description}</p>
+            <div class="pt-2 border-t border-slate-100 text-[11px] space-y-1">
+              <div><strong class="text-rose-700">衝擊：</strong><span class="text-slate-600">${p.impact}</span></div>
+              <div><strong class="text-emerald-700">處置：</strong><span class="text-slate-600">${p.action}</span></div>
+            </div>
+          `;
+          patGrid.appendChild(card);
+        });
+      }
+
+      // 3. 10/13 & 08/18 Decisions
+      renderList('decisions1013List', meetingData.meeting_1013?.decisions || [], '✓');
+      renderList('discussions1013List', meetingData.meeting_1013?.discussions || [], '•');
+      renderList('decisions0818List', meetingData.meeting_0818?.decisions || [], '✓');
+      renderList('discussions0818List', meetingData.meeting_0818?.discussions || [], '•');
+
+      // 4. Insights Grid
+      const insGrid = document.getElementById('insightsGrid');
+      if (insGrid) {
+        insGrid.innerHTML = '';
+        (meetingData.deep_insights || []).forEach(ins => {
+          const card = document.createElement('div');
+          card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2 flex flex-col justify-between";
+          card.innerHTML = `
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">${ins.tag}</span>
+              </div>
+              <h4 class="text-sm font-bold text-slate-900 leading-snug">${ins.title}</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">${ins.detail}</p>
+            </div>
+          `;
+          insGrid.appendChild(card);
+        });
+      }
+
+      // 5. Opportunities Grid
+      const oppGrid = document.getElementById('opportunitiesGrid');
+      if (oppGrid) {
+        oppGrid.innerHTML = '';
+        (meetingData.business_opportunities || []).forEach(opp => {
+          const card = document.createElement('div');
+          card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3";
+          card.innerHTML = `
+            <div>
+              <span class="text-[11px] font-mono font-semibold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">${opp.category}</span>
+              <h4 class="text-sm font-bold text-slate-900 mt-1">${opp.title}</h4>
+              <p class="text-xs text-slate-500 mt-0.5">${opp.background}</p>
+            </div>
+            <div class="space-y-2 text-xs pt-2 border-t border-slate-100">
+              <div class="p-2.5 rounded bg-slate-50 border border-slate-200 text-slate-700 leading-relaxed">
+                <strong class="text-blue-700">A.</strong> ${opp.opt_a}
+              </div>
+              <div class="p-2.5 rounded bg-amber-50/70 border border-amber-200 text-slate-700 leading-relaxed">
+                <strong class="text-amber-800">B.</strong> ${opp.opt_b}
+              </div>
+            </div>
+          `;
+          oppGrid.appendChild(card);
+        });
+      }
+
+      // 6. Upstream / Downstream
+      renderList('upstreamList', meetingData.organization_alignment?.upstream?.points || [], '▲');
+      renderList('downstreamList', meetingData.organization_alignment?.downstream?.points || [], '▼');
+    }
+
+    function renderList(elementId, items, bullet) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      el.innerHTML = items.map(item => `
+        <li class="flex items-start space-x-1.5 leading-relaxed">
+          <span class="font-bold text-slate-400 mt-0.5 flex-shrink-0">${bullet}</span>
+          <span>${item}</span>
+        </li>
+      `).join('');
+    }
+
+    // ============================================================================
+    // Action Tracking Matrix Rendering
+    // ============================================================================
+    function renderActionsTable() {
+      const tbody = document.getElementById('actionsTableBody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      const actions = meetingData.action_items || [];
+      const filtered = actions.filter(a => {
+        // Status filter
+        if (currentActionFilter === 'priority' && !a.is_priority) return false;
+        if (currentActionFilter === 'ongoing' && a.status !== '進行中') return false;
+        if (currentActionFilter === 'new' && a.status !== '新增') return false;
+        if (currentActionFilter === 'pending' && !a.status.includes('不明') && !a.status.includes('逾期')) return false;
+
+        // Owner filter
+        if (currentOwnerFilter !== 'all' && a.owner !== currentOwnerFilter) return false;
+
+        return true;
+      });
+
+      filtered.forEach((a, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = `hover:bg-slate-50 transition ${a.is_priority ? 'bg-rose-50/30' : ''}`;
+
+        let statusBadge = "bg-slate-100 text-slate-700";
+        if (a.status === '進行中') statusBadge = "bg-blue-100 text-blue-800 font-semibold";
+        if (a.status === '新增') statusBadge = "bg-emerald-100 text-emerald-800 font-semibold";
+        if (a.status.includes('不明') || a.status.includes('逾期')) statusBadge = "bg-rose-100 text-rose-800 font-bold";
+
+        tr.innerHTML = `
+          <td class="py-3 px-3.5 text-center font-mono text-slate-400 text-xs">${idx + 1}</td>
+          <td class="py-3 px-4 font-bold text-slate-900">
+            ${a.is_priority ? '<span class="text-rose-600 font-extrabold mr-1">⚠️</span>' : ''}
+            <span>${a.title}</span>
+          </td>
+          <td class="py-3 px-3 font-semibold text-slate-800">${a.owner}</td>
+          <td class="py-3 px-3.5 text-slate-500 font-mono text-xs">${a.deadline}</td>
+          <td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded text-xs ${statusBadge}">${a.status}</span></td>
+          <td class="py-3 px-3 text-center text-xs font-mono text-slate-400">${a.source}</td>
+          <td class="py-3 px-4 text-xs text-slate-600 leading-relaxed">${a.note}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderOwnerFilterPills() {
+      const container = document.getElementById('ownerFilterPills');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const actions = meetingData.action_items || [];
+      const owners = ['all', ...new Set(actions.map(a => a.owner))];
+
+      owners.forEach(owner => {
+        const btn = document.createElement('button');
+        const isActive = currentOwnerFilter === owner;
+        btn.className = `px-2 py-0.5 rounded text-xs transition ${isActive ? 'bg-slate-800 text-white font-bold' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`;
+        btn.textContent = owner === 'all' ? '全部人員' : owner;
+        btn.onclick = () => filterActionsByOwner(owner);
+        container.appendChild(btn);
+      });
+    }
+
+    function filterActions(status) {
+      currentActionFilter = status;
+      document.querySelectorAll('.action-status-btn').forEach(btn => {
+        if (btn.dataset.status === status) {
+          btn.className = "action-status-btn px-2.5 py-1 rounded-md bg-slate-800 text-white font-medium";
+        } else {
+          btn.className = "action-status-btn px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 hover:bg-slate-200";
+        }
+      });
+      renderActionsTable();
+    }
+
+    function filterActionsByOwner(owner) {
+      currentOwnerFilter = owner;
+      renderOwnerFilterPills();
+      renderActionsTable();
+    }
+
+    // ============================================================================
+    // Global Instant Search Logic
+    // ============================================================================
+    let searchDebounceTimer = null;
+    let currentSearchTypeFilter = 'all';
+
+    function handleSearch(query) {
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        executeSearch(query.trim());
+      }, 150);
+    }
+
+    function executeSearch(q) {
+      const section = document.getElementById('searchResultsSection');
+      const list = document.getElementById('searchResultsList');
+      const label = document.getElementById('searchQueryLabel');
+      const countLabel = document.getElementById('searchResultCount');
+      if (!section || !list) return;
+
+      if (!q || q.length < 1) {
+        section.classList.add('hidden');
+        list.innerHTML = '';
+        return;
+      }
+
+      section.classList.remove('hidden');
+      label.textContent = `"${q}"`;
+
+      const results = [];
+      const qLower = q.toLowerCase();
+
+      // 1. Search Slides
+      slidesData.forEach((s, idx) => {
+        const textToSearch = [
+          s.conclusion_title,
+          s.subtitle,
+          s.core_claim,
+          s.category,
+          JSON.stringify(s.cards || []),
+          JSON.stringify(s.steps || []),
+          JSON.stringify(s.rows || []),
+          JSON.stringify(s.quadrants || []),
+          JSON.stringify(s.speaker_notes || {})
+        ].join(' ').toLowerCase();
+
+        if (textToSearch.includes(qLower)) {
+          results.push({
+            type: 'slides',
+            badge: `投影片 P.${idx + 1}`,
+            title: s.conclusion_title || s.title,
+            snippet: s.subtitle || s.core_claim || '投影片內容包含該關鍵字',
+            actionText: '跳至此頁投影片 ➔',
+            action: () => {
+              switchView('slides');
+              goToSlide(idx);
+              clearSearch();
+            }
+          });
+        }
+      });
+
+      // 2. Search Actions
+      (meetingData.action_items || []).forEach(a => {
+        const textToSearch = [a.title, a.owner, a.note, a.status].join(' ').toLowerCase();
+        if (textToSearch.includes(qLower)) {
+          results.push({
+            type: 'actions',
+            badge: `行動追蹤 [${a.owner}]`,
+            title: a.title,
+            snippet: `${a.status} ｜ 期限：${a.deadline} ｜ ${a.note}`,
+            actionText: '查看行動表 ➔',
+            action: () => {
+              switchView('actions');
+              clearSearch();
+            }
+          });
+        }
+      });
+
+      // 3. Search Decisions & Insights
+      (meetingData.deep_insights || []).forEach(ins => {
+        if ((ins.title + ' ' + ins.detail + ' ' + ins.tag).toLowerCase().includes(qLower)) {
+          results.push({
+            type: 'decisions',
+            badge: `管顧洞察 [${ins.tag}]`,
+            title: ins.title,
+            snippet: ins.detail,
+            actionText: '查看洞察詳情 ➔',
+            action: () => {
+              switchView('intelligence');
+              clearSearch();
+            }
+          });
+        }
+      });
+
+      // 4. Search Opportunities
+      (meetingData.business_opportunities || []).forEach(opp => {
+        if ((opp.title + ' ' + opp.background + ' ' + opp.opt_a + ' ' + opp.opt_b).toLowerCase().includes(qLower)) {
+          results.push({
+            type: 'opportunities',
+            badge: `專案商機 [${opp.category}]`,
+            title: opp.title,
+            snippet: `${opp.opt_a} ｜ ${opp.opt_b}`,
+            actionText: '查看商機評估 ➔',
+            action: () => {
+              switchView('intelligence');
+              clearSearch();
+            }
+          });
+        }
+      });
+
+      countLabel.textContent = `(共找到 ${results.length} 筆匹配)`;
+
+      // Filter by sub-scope
+      const filtered = results.filter(r => {
+        if (currentSearchTypeFilter === 'all') return true;
+        return r.type === currentSearchTypeFilter;
+      });
+
+      if (filtered.length === 0) {
+        list.innerHTML = `<div class="text-xs text-slate-400 py-4 text-center">查無符合 "${q}" 的內容，請嘗試更換關鍵字。</div>`;
+        return;
+      }
+
+      list.innerHTML = '';
+      filtered.forEach(r => {
+        const item = document.createElement('div');
+        item.className = "p-3 bg-slate-50 hover:bg-slate-100/80 rounded-lg border border-slate-200 transition flex items-center justify-between cursor-pointer";
+        item.onclick = r.action;
+
+        // Highlight matched text
+        const safeRegex = new RegExp(`(${escapeRegExp(q)})`, 'gi');
+        const hlTitle = r.title.replace(safeRegex, '<mark class="highlight-search">$1</mark>');
+        const hlSnippet = r.snippet.replace(safeRegex, '<mark class="highlight-search">$1</mark>');
+
+        item.innerHTML = `
+          <div class="space-y-1 pr-4">
+            <div class="flex items-center space-x-2">
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-semibold">${r.badge}</span>
+              <h4 class="text-xs font-bold text-slate-900">${hlTitle}</h4>
+            </div>
+            <p class="text-xs text-slate-600 line-clamp-1 leading-relaxed">${hlSnippet}</p>
+          </div>
+          <span class="text-xs font-semibold text-amber-700 hover:text-amber-800 flex-shrink-0">${r.actionText}</span>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    function filterSearchResultType(type) {
+      currentSearchTypeFilter = type;
+      document.querySelectorAll('.search-filter-pill').forEach(btn => {
+        if (btn.dataset.type === type) {
+          btn.className = "search-filter-pill px-2.5 py-1 rounded-full bg-slate-800 text-white font-medium";
+        } else {
+          btn.className = "search-filter-pill px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
+        }
+      });
+      const q = document.getElementById('globalSearchInput')?.value || '';
+      executeSearch(q);
+    }
+
+    function clearSearch() {
+      const inp = document.getElementById('globalSearchInput');
+      const mInp = document.getElementById('mobileSearchInput');
+      const sec = document.getElementById('searchResultsSection');
+      if (inp) inp.value = '';
+      if (mInp) mInp.value = '';
+      if (sec) sec.classList.add('hidden');
+    }
+
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    // ============================================================================
+    // Modal Helpers
+    // ============================================================================
+    function openExtensibilityModal() {
+      const modal = document.getElementById('extensibilityModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeExtensibilityModal() {
+      const modal = document.getElementById('extensibilityModal');
+      if (modal) modal.classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
